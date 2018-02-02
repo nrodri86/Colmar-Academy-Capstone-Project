@@ -1,0 +1,417 @@
+/****** General Styles *********/
+html,
+body {
+	font-size: 16px;
+	background-color: #FFF6E3;
+	align-self: center;
+	color:#313B42;
+	font-family: 'Karla', sans-serif;
+
+}
+@media only screen and (max-width: 760px) {
+	html,
+	body {
+		font-size: 16px;
+	}
+}
+h1{
+	font-size: 3.41rem;
+	color:#3A464F;
+	font-weight: bold;
+	font-family: 'Crimson Text', serif;
+}
+h2{
+	font-size: 2.61rem;
+	font-weight: bold;
+	color:#3A464F;
+	font-family: 'Crimson Text', serif;
+}
+h3{
+	font-size: 1.61rem;
+	font-weight: bold;
+	color:#29475B;
+	font-family: 'Crimson Text', serif;
+}
+a{
+	color:#00548E;
+}
+
+.image-container {
+	overflow: hidden;
+}
+.image-container img {
+	display: block;
+	max-width: 100%;
+	opacity:0.9;
+}
+.image-container video {
+	display: block;
+	max-width: 100%;
+}
+.left-container{	
+	width: 60%;
+}
+.left-container-secondary-new{	
+	width: 35%;
+}
+.standard-frame{
+	margin:2rem 1.5rem;
+}
+@media only screen and (max-width: 760px) {
+	.standard-frame{
+		margin:0 0;
+	}
+}
+.image-container-frame{
+	margin:1rem;
+}
+
+/****** Header Style *********/
+header{
+	display:  flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 4rem;
+	background-color: #F8E1B7;
+}
+.logo{
+	display:  flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 1.5rem;
+	height: 2rem;
+}
+
+.brand-colmar-academy{
+
+}
+.brand-colmar-academy strong{
+	font-weight: bold;
+}
+header nav ul {
+	display: flex;
+}
+nav{
+	margin-right: 1.5rem;
+}
+nav li{
+	transition: background-color 1s linear;
+}
+nav li + li{
+	margin-left: 1rem;
+}
+nav li a:active{
+  color:#3A464F;
+}
+nav li:hover{
+  background-color:#FFF6E3;
+}
+
+header .mobile {
+	display: none;
+}
+
+
+@media only screen and (max-width: 760px) {
+	header .desktop {
+		display: none;
+	}
+	header .mobile {
+		display: block;
+		width: 100%;
+	}
+	.mobile ul{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+/****** banner Style *********/
+
+#banner{
+	display: flex;
+	background-color: #D6D7D2; 
+}
+#banner .banner-content{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	width:35% ;
+}
+.banner-content h3{
+	margin:1.5rem 0 1.5rem 0;
+}
+.start-here-buttom{
+	background-color: #939667;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	opacity:0.7;
+	border-radius: 0.25rem;
+	transition: background-color 1s linear;
+}
+.start-here-buttom:hover{
+  background-color:#3A464F;
+}
+.start-here-buttom p{
+	vertical-align: center;
+	color:white;
+	text-align: center;
+
+}
+.start-here-buttom p:active{
+
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 760px) {
+	#banner{
+		display: flex;
+		flex-flow: column nowrap; 
+	}	
+	#banner-image {
+		width:  100%;
+	}
+	#banner .banner-content{
+		width:  100%;
+		text-align: center;
+	}
+	.banner-content h1{
+		margin:2rem 1rem 1.5rem 1rem;
+	}
+	.banner-content h3{
+		margin:0 1rem 1.5rem 1rem;
+	}
+	.start-here-buttom{
+		margin:0 1rem 2rem 1rem;
+	}
+}
+#updates{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.main-new h2{
+	margin-top:2rem;
+}
+.main-new p{
+	margin-top:1.5rem;
+}
+.main-new{
+	transition: background-color 1s linear;
+}
+.main-new:hover{
+  background-color:#D6D7D2; 
+}
+.main-new .source{
+	margin:2rem 0;
+	font-size: 0.61rem;
+}
+#updates .desktop{
+	display: block;
+}
+#updates .mobile{
+	display: none;
+}
+@media only screen and (max-width: 760px) {
+	#updates{
+		display: flex;
+		flex-flow: column nowrap;
+	}
+	#updates .left-container{
+		display: none;
+	}
+	#updates .secondary-news{
+		width: 100%;
+		margin: 0 auto;
+		
+	}
+	#updates .secondary-new{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		margin: 1rem; 
+	}
+	#updates .image-container-frame{
+		margin:0rem;
+	}
+	#updates .left-container-secondary-new{	
+		width: 100%;
+	}
+	#updates .image-container {
+		overflow: hidden;
+	}
+	#updates .desktop{
+		display: none;
+	}
+	#updates .mobile{
+		display: block;
+	}
+	#updates .secondary-content{
+		margin:1rem 1rem;
+	}	
+}
+.secondary-news, .secondary-theses{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	width:40%;
+	margin: 2rem auto;
+}
+.secondary-new, .secondary-thesis{
+	display: flex;
+	flex-flow:row wrap;
+	justify-content: flex-start;
+	transition: background-color 1s linear;
+}
+
+.secondary-new:hover{
+  background-color:#D6D7D2; 
+}
+.secondary-thesis:hover{
+  background-color:#D6D7D2; 
+}
+
+.secondary-content{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	width:65%;
+} 
+.secondary-content p{
+	margin:  0.5rem 0
+}
+#subject-section{
+	background-color: #EAEBE5;
+}
+#subject-section, #thesis-exhibit {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+
+
+}
+#subject-section h2{
+	margin: 2rem auto 1rem;
+}
+.subjects-desktop{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+	margin:0 3.5rem;
+}
+.subject{
+	margin: 1rem;
+	width: 30%; 
+	transition: background-color 1s linear;
+}
+.subject:hover{
+  background-color:white;
+}
+
+.subject h3{
+	margin:1rem 1rem 0.25rem 1rem;
+}
+.subject .courses-title{
+	margin:0.5rem 1rem 0.5rem 1rem;
+	color:#6A7F8E;
+}
+.subject .courses-collection{
+	margin:0 1rem 1rem 1rem;
+}
+.subjects-mobile{
+	display: none;
+}
+
+@media only screen and (max-width: 760px) {
+	.subjects-desktop{
+		display: none;
+	}
+	#subject-section{
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content:flex-start;
+	}
+	.subjects-mobile{
+		display: flex;
+		flex-flow: column wrap;
+		width:100%;
+		margin:0 0 2rem 0;
+		 
+	}
+	.subject-mobile{
+		display: flex;
+		flex-flow: column wrap;
+		width:100%;
+		 
+	}
+	.subject-button{
+		background-color: #939667;
+		border-radius: 0.25rem;
+		margin: 0.5rem 1rem;
+		transition: background-color 1s linear;
+	}
+	.subject-button:hover{
+		background-color:#3A464F;
+	}
+	.subject-mobile h3{
+		width:100%;
+		color: white;
+		margin:1rem;
+		font-weight: lighter;
+
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	.secondary-theses{
+		display: none;
+	}
+	.main-new{
+		margin:1rem 0 1.5rem 0;
+	}
+	.main-new h3{
+		display: none;
+	}
+	.main-new p{
+		display: none;
+	}
+	#thesis-exhibit .left-container{
+		width: 100%;
+	}
+}
+#thesis-exhibit h2{
+	margin: 2rem auto 1rem;
+}
+.horizontal{
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.main-new h3{
+	margin:0rem 0 1.5rem 0; 
+
+}
+/****** footer Style *********/
+footer{
+
+}
+.footer{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding:1rem 1.5rem;
+	background-color: #F8E1B7;
+
+}
+.footer span{
+	margin:0 0 0 0.5rem;
+}
+@media only screen and (max-width: 760px) {
+	.compliance{
+		display: none;
+	}
+}
+

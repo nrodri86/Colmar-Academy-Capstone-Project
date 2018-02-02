@@ -1,0 +1,51 @@
+.main {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100%;
+	background-color: blue;
+	justify-content: flex-start;
+}
+div{
+	border: 1px green solid;
+}
+p {
+	font-size: 10rem;
+}
+.main1 {
+	display: flex;
+	width: 100%;
+	background-color: grey; 
+	justify-content: flex-start;
+}
+.left-container{
+	width: 60%;
+}
+.right-container{
+	width: 10%;
+	
+}
+.right-content{
+	display: flex;
+	background-color:darkred;
+	margin:3rem;
+}
+
+.left-content{
+	display: flex;
+	background-color:red;
+	margin:3rem;
+}
+.image-container {
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+}
+
+.image-container img {
+  max-width:  100%;
+
+
+}
